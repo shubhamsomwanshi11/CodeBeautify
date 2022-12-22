@@ -6,275 +6,424 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dailywork Report</title>
+    <style>
+        @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 48px;
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1px;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+            background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+            color: white;
+        }
+
+        .logo {
+            width: 50px;
+            fill: white;
+            padding-right: 15px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .inner-header {
+            height: 65vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex {
+            /*Flexbox for containers*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .waves {
+            position: relative;
+            width: 100%;
+            height: 15vh;
+            margin-bottom: -7px;
+            /*Fix for safari gap*/
+            min-height: 100px;
+            max-height: 150px;
+        }
+
+        .content {
+            position: relative;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
+        }
+
+        /* Animation */
+
+        .parallax>use {
+            animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+        }
+
+        .parallax>use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+        }
+
+        .parallax>use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+        }
+
+        .parallax>use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+        }
+
+        .parallax>use:nth-child(4) {
+            animation-delay: -5s;
+            animation-duration: 20s;
+        }
+
+        @keyframes move-forever {
+            0% {
+                transform: translate3d(-90px, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(85px, 0, 0);
+            }
+        }
+
+        /*Shrinking for mobile*/
+        @media (max-width: 768px) {
+            .waves {
+                height: 40px;
+                min-height: 40px;
+            }
+
+            .content {
+                height: 30vh;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
 </head>
 
 <body>
-    <section class="hero is-fullheight has-background-primary">
-        <div class="container mt-6">
-            <div class="is-centered">
-                <h1 class="is-size-1 has-text-weight-bold has-text-danger has-text-centered">Shubham's Home Page</h1>
-                <p class="has-te
-                xt-weight-bold is-size-4 mb-3">Recent Works</p>
-                <table class="table has-text-centered box mb-5">
-                    <tr class="has-background-danger">
-                        <th class="has-text-centered has-text-light">Date & Time</th>
-                        <th class="has-text-centered has-text-light">Link to the page</th>
-                        <th class="has-text-centered has-text-light">Description</th>
-                        <th class="has-text-centered has-text-light">Time Spent Creating</th>
-                    </tr>
-                    <tr>
-                        <td>4:59 PM Tuesday, 16 December 2022</td>
-                        <td></td>
-                        <td>Learning about Censored Image.</td>
-                        <td>3 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>9:36 PM Monday, 19 December 2022</td>
-                        <td></td>
-                        <td>Updated random-movie-generator.</td>
-                        <td>1 Hour</td>
-                    </tr>
-                    <tr>
-                        <td>8:57 PM Friday, 16 December 2022</td>
-                        <td></td>
-                        <td>Created new tool Random Address in California.</td>
-                        <td>2 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>8:57 PM Wednesday, 14 December 2022</td>
-                        <td></td>
-                        <td>Working on Random Address in California.</td>
-                        <td>1 Hour</td>
-                    </tr>
-                    <tr>
-                        <td>10:00 PM Tuesday, 13 December 2022</td>
-                        <td></td>
-                        <td>Created new tool Random Movie Generator.</td>
-                        <td>2:10 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>10:41 PM Monday, 12 December 2022</td>
-                        <td></td>
-                        <td>Created new tool Character Trait Generator.</td>
-                        <td>2:40 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>8:36 PM Friday, 9 December 2022</td>
-                        <td></td>
-                        <td>Created new tool random-flower-generator.</td>
-                        <td>2 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>6:39 PM Thursday, 8 December 2022</td>
-                        <td></td>
-                        <td>Updated all Generator Containing Google Links.</td>
-                        <td>2.5 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>9:43 PM Wednesday, 7 December 2022</td>
-                        <td></td>
-                        <td>Worked on new random-flower-generator.</td>
-                        <td>1 Hour</td>
-                    </tr>
-                    <tr>
-                        <td>7:30 PM Tuesday, 6 December 2022</td>
-                        <td></td>
-                        <td>Solved error's occuring in generator text file.</td>
-                        <td>30 Minutes</td>
-                    </tr>
-                    <tr>
-                        <td>6:28 PM Monday, 5 December 2022</td>
-                        <td></td>
-                        <td>Created new tool random-quote-generator</td>
-                        <td>1 Hour</td>
-                    </tr>
-                    <tr>
-                        <td>8:07 AM Sunday, 4 December 2022</td>
-                        <td></td>
-                        <td>Created new tool random-sentence-generator</td>
-                        <td>2:30 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>7:10 PM Friday, 1 December 2022</td>
-                        <td></td>
-                        <td>Created new tool random-element-generator</td>
-                        <td>1:30 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>6:45 PM Wednesday, 30 November 2022</td>
-                        <td></td>
-                        <td>Working on new tool random-element-generator</td>
-                        <td>1:30 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>06:09 PM , 29 Tuesday 2022</td>
-                        <td></td>
-                        <td>Creted new tool cursed-text.</td>
-                        <td>1:40 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>08:22 PM Saturday, 27 November 2022</td>
-                        <td></td>
-                        <td>Working on new tool cursed-text.</td>
-                        <td>1 Hour</td>
-                    </tr>
-                    <tr>
-                        <td>08:22 PM Saturday, 27 November 2022</td>
-                        <td></td>
-                        <td>Fixed the error's.</td>
-                        <td>1:40 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>10:39 AM Saturday, 26 November 2022</td>
-                        <td></td>
-                        <td>Created new tool random-planet-generator.</td>
-                        <td>1:30 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>09:24 AM Friday, 25 November 2022</td>
-                        <td></td>
-                        <td>Working on new tool random-planet-generator.</td>
-                        <td>1:30 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>10:04 AM Friday, 25 November 2022</td>
-                        <td></td>
-                        <td>Created new tool random-holiday-generator.</td>
-                        <td>1 Hour</td>
-                    </tr>
-                    <tr>
-                        <td>9:51 PM Thursday, 24 November 2022</td>
-                        <td></td>
-                        <td>Working on new tool random-holiday-generator.</td>
-                        <td>2 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>7:26 PM Wednesday, 23 November 2022</td>
-                        <td></td>
-                        <td>Created new tool random-lastname-generator.</td>
-                        <td>2 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>7:23 PM Tuesday, 22 November 2022</td>
-                        <td></td>
-                        <td>Created new tool random-cat-generator.</td>
-                        <td>2.5 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>6:12 PM Monday, 21 November 2022</td>
-                        <td></td>
-                        <td>Created new tool random-college-generator.</td>
-                        <td>3 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>7:48 PM Saturday, 19 November 2022</td>
-                        <td></td>
-                        <td>Research for the Solution.</td>
-                        <td>2 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>6:56 PM Friday, 18 November 2022</td>
-                        <td></td>
-                        <td>Research for the Solution.</td>
-                        <td>4 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>3:23 PM ,Thursday 17 November 2022</td>
-                        <td></td>
-                        <td>Research for the Solution.</td>
-                        <td>2 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>3:22 AM Thursday, 17 November 2022</td>
-                        <td></td>
-                        <td>Created new tool Random Bird Generator.</td>
-                        <td>3 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>10:08 PM Wednesday, 16 November 2022</td>
-                        <td></td>
-                        <td>Created new tool Random Book Generator.</td>
-                        <td>3 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>4:52 PM Tuesday, 15 November 2022</td>
-                        <td></td>
-                        <td>Created new tool Random Job Generator.</td>
-                        <td>3 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>6:28 PM Monday, 14 November 2022</td>
-                        <td></td>
-                        <td>Created new tool Monster Generator.</td>
-                        <td>2 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>5:45 PM Sunday, 13 November 2022</td>
-                        <td></td>
-                        <td>Create JSON data for Monster Generator.</td>
-                        <td>1.5 Hour</td>
-                    </tr>
-                    <tr>
-                        <td>12:57 AM Saturday, 12 November 2022</td>
-                        <td></td>
-                        <td>Research on random Generators.</td>
-                        <td>2 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>8:37 AM Saturday, 12 November 2022</td>
-                        <td></td>
-                        <td>Download and Setup WAMP.</td>
-                        <td>1 Hour</td>
-                    </tr>
-                    <tr>
-                        <td>11:00 AM Friday, 9 November 2022</td>
-                        <td></td>
-                        <td>Research on random Generators.</td>
-                        <td>2 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>9:37 PM Thursday, 10 November 2022</td>
-                        <td><a
-                                href="https://shubhamsomwanshi11.github.io/Cybertools-Clone/">https://shubhamsomwanshi11.github.io/Cybertools-Clone/</a>
-                        </td>
-                        <td>CyberTools Clone using HTML & Bulma CSS.</td>
-                        <td>5 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>9:30 PM Wednesday, 9 November 2022</td>
-                        <td><a
-                                href="https://shubhamsomwanshi11.github.io/Resume/">https://shubhamsomwanshi11.github.io/Resume/</a>
-                        </td>
-                        <td>Resume Using HTML Bulma CSS.</td>
-                        <td>2.5 Hours</td>
-                    </tr>
-
-                    <tr>
-                        <td>11:00 PM Tuesday, 8 November 2022</td>
-                        <td><a
-                                href="https://shubhamsomwanshi11.github.io/Simple_Login/">https://shubhamsomwanshi11.github.io/Simple_Login/</a>
-                        </td>
-                        <td>Simple Login Page.</td>
-                        <td>One hour</td>
-                    </tr>
-                    <tr>
-                        <td>12:30 PM Tuesday, 8 November 2022</td>
-                        <td><a
-                                href="https://shubhamsomwanshi11.github.io/CodeBeautify/">https://shubhamsomwanshi11.github.io/CodeBeautify/</a>
-                        </td>
-                        <td>Daily Report Page.</td>
-                        <td>One hour</td>
-                    </tr>
-                    <tr>
-                        <td>10:00 AM Tuesday, 8 November 2022</td>
-                        <td></td>
-                        <td>Watch Bulma CSS tutorial.</td>
-                        <td></td>
-                    </tr>
-                </table>
+    <section class="hero is-fullheight has-background-primary-light">
+        <div class="header">
+            <div class="container mt-6">
+                <div class="is-centered">
+                    <h1 class="is-size-1 has-text-weight-bold has-text-white">Shubham's Home Page</h1>
+                    <p class="has-text-weight-bold is-size-4 mb-3">Recent Works</p>
+                    <table class="table has-text-centered box mb-5">
+                        <tr class="has-background-primary-light">
+                            <th class="has-text-centered">Date & Time</th>
+                            <th class="has-text-centered">Link to the page</th>
+                            <th class="has-text-centered">Description</th>
+                            <th class="has-text-centered">Time Spent Creating</th>
+                        </tr>
+                        <tr>
+                            <td>11:05 PM Thursday, 20 December 2022</td>
+                            <td></td>
+                            <td>Adding dropdown in random-pokemon-generator.</td>
+                            <td>3 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>11:54 PM Wednesday, 20 December 2022</td>
+                            <td></td>
+                            <td>Created new tool random-pokemon-generator.</td>
+                            <td>3 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>4:59 PM Tuesday, 20 December 2022</td>
+                            <td></td>
+                            <td>Learning about Censored Image.</td>
+                            <td>3 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>9:36 PM Monday, 19 December 2022</td>
+                            <td></td>
+                            <td>Updated random-movie-generator.</td>
+                            <td>1 Hour</td>
+                        </tr>
+                        <tr>
+                            <td>8:57 PM Friday, 16 December 2022</td>
+                            <td></td>
+                            <td>Created new tool Random Address in California.</td>
+                            <td>2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>8:57 PM Wednesday, 14 December 2022</td>
+                            <td></td>
+                            <td>Working on Random Address in California.</td>
+                            <td>1 Hour</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 PM Tuesday, 13 December 2022</td>
+                            <td></td>
+                            <td>Created new tool Random Movie Generator.</td>
+                            <td>2:10 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>10:41 PM Monday, 12 December 2022</td>
+                            <td></td>
+                            <td>Created new tool Character Trait Generator.</td>
+                            <td>2:40 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>8:36 PM Friday, 9 December 2022</td>
+                            <td></td>
+                            <td>Created new tool random-flower-generator.</td>
+                            <td>2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>6:39 PM Thursday, 8 December 2022</td>
+                            <td></td>
+                            <td>Updated all Generator Containing Google Links.</td>
+                            <td>2.5 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>9:43 PM Wednesday, 7 December 2022</td>
+                            <td></td>
+                            <td>Worked on new random-flower-generator.</td>
+                            <td>1 Hour</td>
+                        </tr>
+                        <tr>
+                            <td>7:30 PM Tuesday, 6 December 2022</td>
+                            <td></td>
+                            <td>Solved error's occuring in generator text file.</td>
+                            <td>30 Minutes</td>
+                        </tr>
+                        <tr>
+                            <td>6:28 PM Monday, 5 December 2022</td>
+                            <td></td>
+                            <td>Created new tool random-quote-generator</td>
+                            <td>1 Hour</td>
+                        </tr>
+                        <tr>
+                            <td>8:07 AM Sunday, 4 December 2022</td>
+                            <td></td>
+                            <td>Created new tool random-sentence-generator</td>
+                            <td>2:30 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>7:10 PM Friday, 1 December 2022</td>
+                            <td></td>
+                            <td>Created new tool random-element-generator</td>
+                            <td>1:30 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>6:45 PM Wednesday, 30 November 2022</td>
+                            <td></td>
+                            <td>Working on new tool random-element-generator</td>
+                            <td>1:30 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>06:09 PM , 29 Tuesday 2022</td>
+                            <td></td>
+                            <td>Creted new tool cursed-text.</td>
+                            <td>1:40 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>08:22 PM Saturday, 27 November 2022</td>
+                            <td></td>
+                            <td>Working on new tool cursed-text.</td>
+                            <td>1 Hour</td>
+                        </tr>
+                        <tr>
+                            <td>08:22 PM Saturday, 27 November 2022</td>
+                            <td></td>
+                            <td>Fixed the error's.</td>
+                            <td>1:40 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>10:39 AM Saturday, 26 November 2022</td>
+                            <td></td>
+                            <td>Created new tool random-planet-generator.</td>
+                            <td>1:30 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>09:24 AM Friday, 25 November 2022</td>
+                            <td></td>
+                            <td>Working on new tool random-planet-generator.</td>
+                            <td>1:30 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>10:04 AM Friday, 25 November 2022</td>
+                            <td></td>
+                            <td>Created new tool random-holiday-generator.</td>
+                            <td>1 Hour</td>
+                        </tr>
+                        <tr>
+                            <td>9:51 PM Thursday, 24 November 2022</td>
+                            <td></td>
+                            <td>Working on new tool random-holiday-generator.</td>
+                            <td>2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>7:26 PM Wednesday, 23 November 2022</td>
+                            <td></td>
+                            <td>Created new tool random-lastname-generator.</td>
+                            <td>2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>7:23 PM Tuesday, 22 November 2022</td>
+                            <td></td>
+                            <td>Created new tool random-cat-generator.</td>
+                            <td>2.5 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>6:12 PM Monday, 21 November 2022</td>
+                            <td></td>
+                            <td>Created new tool random-college-generator.</td>
+                            <td>3 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>7:48 PM Saturday, 19 November 2022</td>
+                            <td></td>
+                            <td>Research for the Solution.</td>
+                            <td>2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>6:56 PM Friday, 18 November 2022</td>
+                            <td></td>
+                            <td>Research for the Solution.</td>
+                            <td>4 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>3:23 PM ,Thursday 17 November 2022</td>
+                            <td></td>
+                            <td>Research for the Solution.</td>
+                            <td>2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>3:22 AM Thursday, 17 November 2022</td>
+                            <td></td>
+                            <td>Created new tool Random Bird Generator.</td>
+                            <td>3 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>10:08 PM Wednesday, 16 November 2022</td>
+                            <td></td>
+                            <td>Created new tool Random Book Generator.</td>
+                            <td>3 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>4:52 PM Tuesday, 15 November 2022</td>
+                            <td></td>
+                            <td>Created new tool Random Job Generator.</td>
+                            <td>3 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>6:28 PM Monday, 14 November 2022</td>
+                            <td></td>
+                            <td>Created new tool Monster Generator.</td>
+                            <td>2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>5:45 PM Sunday, 13 November 2022</td>
+                            <td></td>
+                            <td>Create JSON data for Monster Generator.</td>
+                            <td>1.5 Hour</td>
+                        </tr>
+                        <tr>
+                            <td>12:57 AM Saturday, 12 November 2022</td>
+                            <td></td>
+                            <td>Research on random Generators.</td>
+                            <td>2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>8:37 AM Saturday, 12 November 2022</td>
+                            <td></td>
+                            <td>Download and Setup WAMP.</td>
+                            <td>1 Hour</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 AM Friday, 9 November 2022</td>
+                            <td></td>
+                            <td>Research on random Generators.</td>
+                            <td>2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>9:37 PM Thursday, 10 November 2022</td>
+                            <td><a
+                                    href="https://shubhamsomwanshi11.github.io/Cybertools-Clone/">https://shubhamsomwanshi11.github.io/Cybertools-Clone/</a>
+                            </td>
+                            <td>CyberTools Clone using HTML & Bulma CSS.</td>
+                            <td>5 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>9:30 PM Wednesday, 9 November 2022</td>
+                            <td><a
+                                    href="https://shubhamsomwanshi11.github.io/Resume/">https://shubhamsomwanshi11.github.io/Resume/</a>
+                            </td>
+                            <td>Resume Using HTML Bulma CSS.</td>
+                            <td>2.5 Hours</td>
+                        </tr>
+    
+                        <tr>
+                            <td>11:00 PM Tuesday, 8 November 2022</td>
+                            <td><a
+                                    href="https://shubhamsomwanshi11.github.io/Simple_Login/">https://shubhamsomwanshi11.github.io/Simple_Login/</a>
+                            </td>
+                            <td>Simple Login Page.</td>
+                            <td>One hour</td>
+                        </tr>
+                        <tr>
+                            <td>12:30 PM Tuesday, 8 November 2022</td>
+                            <td><a
+                                    href="https://shubhamsomwanshi11.github.io/CodeBeautify/">https://shubhamsomwanshi11.github.io/CodeBeautify/</a>
+                            </td>
+                            <td>Daily Report Page.</td>
+                            <td>One hour</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 AM Tuesday, 8 November 2022</td>
+                            <td></td>
+                            <td>Watch Bulma CSS tutorial.</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </div>
+           <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+            </svg>
+            </div>
+            <!--Waves end-->
+            
+            </div>
     </section>
 </body>
 
