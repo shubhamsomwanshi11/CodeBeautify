@@ -26,12 +26,55 @@
         .header {
             position: relative;
             text-align: center;
-            background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+            background: linear-gradient(60deg, rgb(74, 59, 133) 0%, rgba(0, 172, 193, 1) 100%);
             color: white;
+        }
+
+        /* Define the colors for the border animation */
+        :root {
+            --color1: #ff0000;
+            --color2: #ff8000;
+            --color3: #ffff00;
+            --color4: #00ff00;
+            --color5: #0000ff;
+        }
+
+        /* Define the animation */
+        @keyframes border-animation {
+            0% {
+                border-color: var(--color1);
+            }
+
+            20% {
+                border-color: var(--color2);
+            }
+
+            40% {
+                border-color: var(--color3);
+            }
+
+            60% {
+                border-color: var(--color4);
+            }
+
+            80% {
+                border-color: var(--color5);
+            }
+
+            100% {
+                border-color: var(--color1);
+            }
+        }
+
+        /* Apply the animation to the card */
+        .anm {
+            border: 4px solid;
+            animation: border-animation 1s linear infinite;
         }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
 </head>
+
 <body>
     <section class="hero is-fullheight has-background-primary-light">
         <div class="header">
@@ -39,7 +82,7 @@
                 <div class="is-centered">
                     <h1 class="is-size-1 has-text-weight-bold has-text-white">Shubham's Home Page</h1>
                     <p class="has-text-weight-bold is-size-4 mb-3">Recent Works</p>
-                    <table class="table has-text-centered box mb-5">
+                    <table class="anm table has-text-centered box mb-5">
                         <tr class="has-background-primary-light">
                             <th class="has-text-centered">Date & Time</th>
                             <th class="has-text-centered">Link to the page</th>
@@ -49,7 +92,7 @@
                         <tr>
                             <td>10:36 PM Thursday, 23 February 2023</td>
                             <td></td>
-                            <td>Working on Random Celibrity Generator.</td>
+                            <td>Working on Random Celebrity Generator.</td>
                             <td>1 Hour</td>
                         </tr>
                         <tr>
