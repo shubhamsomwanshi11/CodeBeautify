@@ -28,658 +28,617 @@
             text-align: center;
             background: linear-gradient(60deg, rgb(74, 59, 133) 0%, rgba(0, 172, 193, 1) 100%);
             color: white;
-        }
-
-        /* Define the colors for the border animation */
-        :root {
-            --color1: #ff0000;
-            --color2: #ff8000;
-            --color3: #ffff00;
-            --color4: #00ff00;
-            --color5: #0000ff;
-        }
-
-        /* Define the animation */
-        @keyframes border-animation {
-            0% {
-                border-color: var(--color1);
-            }
-
-            20% {
-                border-color: var(--color2);
-            }
-
-            40% {
-                border-color: var(--color3);
-            }
-
-            60% {
-                border-color: var(--color4);
-            }
-
-            80% {
-                border-color: var(--color5);
-            }
-
-            100% {
-                border-color: var(--color1);
-            }
-        }
-
-        /* Apply the animation to the card */
-        .anm {
-            border: 4px solid;
-            animation: border-animation 10s linear infinite;
+            height: 100vh;
         }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <section class="hero is-fullheight has-background-primary-light">
+    <section class="is-fullheight has-background-primary-light">
         <div class="header">
-            <div class="container mt-6">
-                <div class="is-centered">
-                    <h1 class="is-size-1 has-text-weight-bold has-text-white">Shubham's Home Page</h1>
-                    <p class="has-text-weight-bold is-size-4 mb-3">Recent Works</p>
-                    <table class="anm table has-text-centered box mb-5 mx-2">
-                        <tr class="has-background-primary-light">
-                            <th class="has-text-centered">Date & Time</th>
-                            <th class="has-text-centered">Link to the page</th>
-                            <th class="has-text-centered">Description</th>
-                            <th class="has-text-centered">Time Spent Creating</th>
-                        </tr>
+            <h1 class="is-size-1 has-text-weight-bold has-text-white">Shubham's Home Page</h1>
+            <p class="has-text-weight-bold is-size-4 mb-3">Recent Works</p>
+            <div class="is-centered">
+                <center>
+                <table class="table has-text-centered card mb-5 mx-2" style="margin: 0 auto;">
+                        <thead>
+                            <tr class="has-background-primary-light" style="width: 100%;">
+                                <th class="has-text-centered">Date & Time</th>
+                                <th class="has-text-centered">Link to the page</th>
+                                <th class="has-text-centered">Description</th>
+                                <th class="has-text-centered">Time Spent Creating</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                        <!-- <tbody>
+                            <tr>
+                                <td>7 March 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
+                                <td>Working on time sheet Calculator</td>
+                                <td>4 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>5 March 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
+                                <td>Working on time sheet Calculator</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>4 March 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
+                                <td>Working on time sheet Calculator</td>
+                                <td>3.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>3 March 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
+                                <td>Completed time sheet Calculator</td>
+                                <td>4 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>31 March 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
+                                <td>Fixing time sheet Calculator</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>30 March 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
+                                <td>Fixing in time sheet Calculator</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>29 March 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
+                                <td>Fixing a error in time sheet Calculator</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>28 March 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
+                                <td>Working on Time Sheet Calculator</td>
+                                <td>2.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>27 March 2023</td>
+                                <td></td>
+                                <td>Fixing CSS of XMLVIEVER</td>
+                                <td>4 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>7:05 PM Saturday, 25 March 2023</td>
+                                <td></td>
+                                <td>Created Random Video Game Generator and Updated UI's</td>
+                                <td>4 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>Friday, 24 March 2023</td>
+                                <td></td>
+                                <td>Creating new tool Random Video Game Generator</td>
+                                <td>2.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday, 23 March 2023</td>
+                                <td></td>
+                                <td>Created UI for Text Editor</td>
+                                <td>2.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday, 21 March 2023</td>
+                                <td></td>
+                                <td>Created UI for Text Formatter</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>7:28 PM Monday, 20 March 2023</td>
+                                <td></td>
+                                <td>Created UI of Censored Image</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>11:25 PM Saturday, 18 March 2023</td>
+                                <td></td>
+                                <td>Created new tool Random Address in Spain.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>4:57 PM Thursday, 16 March 2023</td>
+                                <td></td>
+                                <td>Created new tool Random Actor Generator.</td>
+                                <td>4 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>10:16 PM Wednesday, 15 March 2023</td>
+                                <td></td>
+                                <td>Created new tool Random Caption Generator.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>11:24 PM Tuesday, 14 March 2023</td>
+                                <td></td>
+                                <td>Created new tool Random Song Lyrics.</td>
+                                <td>4 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>Monday, 13 March 2023</td>
+                                <td></td>
+                                <td>Working on Random Song Lyrics.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday, 11 March 2023</td>
+                                <td></td>
+                                <td>Arranging Images and About Section.</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>Friday, 10 March 2023</td>
+                                <td></td>
+                                <td>Collecting Wikipedia Links.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday, 9 March 2023</td>
+                                <td></td>
+                                <td>Created new tool Random Celebrity Generator.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday, 8 March 2023</td>
+                                <td></td>
+                                <td>Resolving errors in JWT Decoder.</td>
+                                <td>4 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>2:44 PM Tuesday, 7 March 2023</td>
+                                <td></td>
+                                <td>Working on JWT Decoder.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>6 March 2023</td>
+                                <td></td>
+                                <td>Working on JWT Decoder.</td>
+                                <td>2.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>5 March 2023</td>
+                                <td></td>
+                                <td>Done with Cursed text Generator.</td>
+                                <td>4 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>4 March 2023</td>
+                                <td></td>
+                                <td>Fixing Bugs in Cursed Text.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>1 March 2023</td>
+                                <td></td>
+                                <td>Fixing Bugs in Cursed Text.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>Friday, 28 February 2023</td>
+                                <td></td>
+                                <td>Added Copy functionality.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>Friday, 27 February 2023</td>
+                                <td></td>
+                                <td>Removed jquery dependancy.</td>
+                                <td>4 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>8:18 PM Friday, 24 February 2023</td>
+                                <td></td>
+                                <td>Move new tools to SSTools.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>10:36 PM Thursday, 23 February 2023</td>
+                                <td></td>
+                                <td>Working on Random Celebrity Generator.</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>11:40 PM Wednesday, 22 February 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/XML-Sorter/">Visit</a></td>
+                                <td>Compled XML Sorter.</td>
+                                <td>4 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>11:34 PM Tuesday, 21 February 2023</td>
+                                <td></td>
+                                <td>Embedding JWT & Cursed Text.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>11:45 PM Monday, 20 February 2023</td>
+                                <td></td>
+                                <td>Working on XML Sorter.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>10:26 PM Sunday, 19 February 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/Cursed-Text/">Visit</a></td>
+                                <td>Completed Cursed text generator.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>9:14 PM Friday, 17 February 2023</td>
+                                <td></td>
+                                <td>Collect JSON data for random-lyrics-generator</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td> 9:41 PM Wednesday, 15 February 2023 </td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/jwt/">Visit</a></td>
+                                <td>Created new tool JWT Decoder.</td>
+                                <td>2.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>2:03 PM Wednesday, 15 February 2023</td>
+                                <td></td>
+                                <td>Worked on cursed text generator.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>11:13 PM Tuesday, 14 February 2023</td>
+                                <td></td>
+                                <td>Working on cursed text generator.</td>
+                                <td>6 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>10:16 PM Monday, 13 February 2023</td>
+                                <td></td>
+                                <td>Adding Crezy ness to cursed text generator.</td>
+                                <td>4.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>8:23 PM Friday ,10 February 2023</td>
+                                <td></td>
+                                <td>Working on cursed-text generator.</td>
+                                <td>2.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>5:15 PM Thursday ,9 February 2023</td>
+                                <td></td>
+                                <td>Creted new tool random-superhero-generator.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>4:13 PM Monday, 9 January 2023</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/jwt-decode/">Visit</a></td>
+                                <td>Created new tool JWT decode.</td>
+                                <td>5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>2:39 AM Saturday ,7 January 2023</td>
+                                <td></td>
+                                <td>Learning for Censored Image.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>12:16 AM Friday , 6 January 2023</td>
+                                <td></td>
+                                <td>Working on random-pokemon-team-generator.</td>
+                                <td>1.2 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>12:40 AM Thursday, 5 January 2023</td>
+                                <td></td>
+                                <td>Created new tool random-pokemon-team-generator.</td>
+                                <td>1.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>11:58 PM Tuesday, 3 January 2023</td>
+                                <td></td>
+                                <td>Working on Censored Image.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>11:46 PM Friday, 30 December 2022</td>
+                                <td></td>
+                                <td>Working on Censored Image.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>04:40 PM Wednesday, 29 December 2022</td>
+                                <td></td>
+                                <td>Collection JSON data for Random Canada Address Generator</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>11:34 PM Wednesday, 28 December 2022</td>
+                                <td></td>
+                                <td>Collection JSON data for Random Canada Address Generator</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>9:38 PM Tuesday, 27 December 2022</td>
+                                <td></td>
+                                <td>Created new tool Random Canada Address Generator</td>
+                                <td>1:30 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>3:55 PM Monday, 26 December 2022</td>
+                                <td></td>
+                                <td>Updated random-address-in-california, fixed random-address-generators file
+                                    downloading
+                                    issue, updated random pokemon generator.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>09:37 AM Friday, 23 December 2022</td>
+                                <td></td>
+                                <td>Working on random-pokemon-generator.</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>11:05 PM Thursday, 22 December 2022</td>
+                                <td></td>
+                                <td>Adding dropdown & about in random-pokemon-generator.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>11:54 PM Wednesday, 21 December 2022</td>
+                                <td></td>
+                                <td>Created new tool random-pokemon-generator.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>4:59 PM Tuesday, 20 December 2022</td>
+                                <td></td>
+                                <td>Learning about Censored Image.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>9:36 PM Monday, 19 December 2022</td>
+                                <td></td>
+                                <td>Updated random-movie-generator.</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>8:57 PM Friday, 16 December 2022</td>
+                                <td></td>
+                                <td>Created new tool Random Address in California.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>8:57 PM Wednesday, 14 December 2022</td>
+                                <td></td>
+                                <td>Working on Random Address in California.</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 PM Tuesday, 13 December 2022</td>
+                                <td></td>
+                                <td>Created new tool Random Movie Generator.</td>
+                                <td>2:10 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>10:41 PM Monday, 12 December 2022</td>
+                                <td></td>
+                                <td>Created new tool Character Trait Generator.</td>
+                                <td>2:40 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>8:36 PM Friday, 9 December 2022</td>
+                                <td></td>
+                                <td>Created new tool random-flower-generator.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>6:39 PM Thursday, 8 December 2022</td>
+                                <td></td>
+                                <td>Updated all Generator Containing Google Links.</td>
+                                <td>2.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>9:43 PM Wednesday, 7 December 2022</td>
+                                <td></td>
+                                <td>Worked on new random-flower-generator.</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>7:30 PM Tuesday, 6 December 2022</td>
+                                <td></td>
+                                <td>Solved error's occuring in generator text file.</td>
+                                <td>30 Minutes</td>
+                            </tr>
+                            <tr>
+                                <td>6:28 PM Monday, 5 December 2022</td>
+                                <td></td>
+                                <td>Created new tool random-quote-generator</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>8:07 AM Sunday, 4 December 2022</td>
+                                <td></td>
+                                <td>Created new tool random-sentence-generator</td>
+                                <td>2:30 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>7:10 PM Friday, 1 December 2022</td>
+                                <td></td>
+                                <td>Created new tool random-element-generator</td>
+                                <td>1:30 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>6:45 PM Wednesday, 30 November 2022</td>
+                                <td></td>
+                                <td>Working on new tool random-element-generator</td>
+                                <td>1:30 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>06:09 PM , 29 Tuesday 2022</td>
+                                <td></td>
+                                <td>Creted new tool cursed-text.</td>
+                                <td>1:40 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>08:22 PM Saturday, 27 November 2022</td>
+                                <td></td>
+                                <td>Working on new tool cursed-text.</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>08:22 PM Saturday, 27 November 2022</td>
+                                <td></td>
+                                <td>Fixed the error's.</td>
+                                <td>1:40 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>10:39 AM Saturday, 26 November 2022</td>
+                                <td></td>
+                                <td>Created new tool random-planet-generator.</td>
+                                <td>1:30 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>09:24 AM Friday, 25 November 2022</td>
+                                <td></td>
+                                <td>Working on new tool random-planet-generator.</td>
+                                <td>1:30 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>10:04 AM Friday, 25 November 2022</td>
+                                <td></td>
+                                <td>Created new tool random-holiday-generator.</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>9:51 PM Thursday, 24 November 2022</td>
+                                <td></td>
+                                <td>Working on new tool random-holiday-generator.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>7:26 PM Wednesday, 23 November 2022</td>
+                                <td></td>
+                                <td>Created new tool random-lastname-generator.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>7:23 PM Tuesday, 22 November 2022</td>
+                                <td></td>
+                                <td>Created new tool random-cat-generator.</td>
+                                <td>2.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>6:12 PM Monday, 21 November 2022</td>
+                                <td></td>
+                                <td>Created new tool random-college-generator.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>7:48 PM Saturday, 19 November 2022</td>
+                                <td></td>
+                                <td>Research for the Solution.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>6:56 PM Friday, 18 November 2022</td>
+                                <td></td>
+                                <td>Research for the Solution.</td>
+                                <td>4 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>3:23 PM ,Thursday 17 November 2022</td>
+                                <td></td>
+                                <td>Research for the Solution.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>3:22 AM Thursday, 17 November 2022</td>
+                                <td></td>
+                                <td>Created new tool Random Bird Generator.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>10:08 PM Wednesday, 16 November 2022</td>
+                                <td></td>
+                                <td>Created new tool Random Book Generator.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>4:52 PM Tuesday, 15 November 2022</td>
+                                <td></td>
+                                <td>Created new tool Random Job Generator.</td>
+                                <td>3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>6:28 PM Monday, 14 November 2022</td>
+                                <td></td>
+                                <td>Created new tool Monster Generator.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>5:45 PM Sunday, 13 November 2022</td>
+                                <td></td>
+                                <td>Create JSON data for Monster Generator.</td>
+                                <td>1.5 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>12:57 AM Saturday, 12 November 2022</td>
+                                <td></td>
+                                <td>Research on random Generators.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>8:37 AM Saturday, 12 November 2022</td>
+                                <td></td>
+                                <td>Download and Setup WAMP.</td>
+                                <td>1 Hour</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM Friday, 9 November 2022</td>
+                                <td></td>
+                                <td>Research on random Generators.</td>
+                                <td>2 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>9:37 PM Thursday, 10 November 2022</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/Cybertools-Clone/">Visit</a>
+                                </td>
+                                <td>CyberTools Clone using HTML & Bulma CSS.</td>
+                                <td>5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>9:30 PM Wednesday, 9 November 2022</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/Resume/">Visit</a>
+                                </td>
+                                <td>Resume Using HTML Bulma CSS.</td>
+                                <td>2.5 Hours</td>
+                            </tr>
 
-                        <tr>
-                            <td>8 March 2023</td>
-                            <td></td>
-                            <td>Created new tool random paragraph generator</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>7 March 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
-                            <td>Working on time sheet Calculator</td>
-                            <td>4 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>5 March 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
-                            <td>Working on time sheet Calculator</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>4 March 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
-                            <td>Working on time sheet Calculator</td>
-                            <td>3.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>3 March 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
-                            <td>Completed time sheet Calculator</td>
-                            <td>4 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>31 March 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
-                            <td>Fixing time sheet Calculator</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>30 March 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
-                            <td>Fixing in time sheet Calculator</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>29 March 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
-                            <td>Fixing a error in time sheet Calculator</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>28 March 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/time-sheet-calculator/">Visit</a></td>
-                            <td>Working on Time Sheet Calculator</td>
-                            <td>2.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>27 March 2023</td>
-                            <td></td>
-                            <td>Fixing CSS of XMLVIEVER</td>
-                            <td>4 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>7:05 PM Saturday, 25 March 2023</td>
-                            <td></td>
-                            <td>Created Random Video Game Generator and Updated UI's</td>
-                            <td>4 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>Friday, 24 March 2023</td>
-                            <td></td>
-                            <td>Creating new tool Random Video Game Generator</td>
-                            <td>2.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday, 23 March 2023</td>
-                            <td></td>
-                            <td>Created UI for Text Editor</td>
-                            <td>2.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday, 21 March 2023</td>
-                            <td></td>
-                            <td>Created UI for Text Formatter</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>7:28 PM Monday, 20 March 2023</td>
-                            <td></td>
-                            <td>Created UI of Censored Image</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>11:25 PM Saturday, 18 March 2023</td>
-                            <td></td>
-                            <td>Created new tool Random Address in Spain.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>4:57 PM Thursday, 16 March 2023</td>
-                            <td></td>
-                            <td>Created new tool Random Actor Generator.</td>
-                            <td>4 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>10:16 PM Wednesday, 15 March 2023</td>
-                            <td></td>
-                            <td>Created new tool Random Caption Generator.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>11:24 PM Tuesday, 14 March 2023</td>
-                            <td></td>
-                            <td>Created new tool Random Song Lyrics.</td>
-                            <td>4 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>Monday, 13 March 2023</td>
-                            <td></td>
-                            <td>Working on Random Song Lyrics.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday, 11 March 2023</td>
-                            <td></td>
-                            <td>Arranging Images and About Section.</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>Friday, 10 March 2023</td>
-                            <td></td>
-                            <td>Collecting Wikipedia Links.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday, 9 March 2023</td>
-                            <td></td>
-                            <td>Created new tool Random Celebrity Generator.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday, 8 March 2023</td>
-                            <td></td>
-                            <td>Resolving errors in JWT Decoder.</td>
-                            <td>4 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>2:44 PM Tuesday, 7 March 2023</td>
-                            <td></td>
-                            <td>Working on JWT Decoder.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>6 March 2023</td>
-                            <td></td>
-                            <td>Working on JWT Decoder.</td>
-                            <td>2.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>5 March 2023</td>
-                            <td></td>
-                            <td>Done with Cursed text Generator.</td>
-                            <td>4 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>4 March 2023</td>
-                            <td></td>
-                            <td>Fixing Bugs in Cursed Text.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>1 March 2023</td>
-                            <td></td>
-                            <td>Fixing Bugs in Cursed Text.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>Friday, 28 February 2023</td>
-                            <td></td>
-                            <td>Added Copy functionality.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>Friday, 27 February 2023</td>
-                            <td></td>
-                            <td>Removed jquery dependancy.</td>
-                            <td>4 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>8:18 PM Friday, 24 February 2023</td>
-                            <td></td>
-                            <td>Move new tools to SSTools.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>10:36 PM Thursday, 23 February 2023</td>
-                            <td></td>
-                            <td>Working on Random Celebrity Generator.</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>11:40 PM Wednesday, 22 February 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/XML-Sorter/">Visit</a></td>
-                            <td>Compled XML Sorter.</td>
-                            <td>4 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>11:34 PM Tuesday, 21 February 2023</td>
-                            <td></td>
-                            <td>Embedding JWT & Cursed Text.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>11:45 PM Monday, 20 February 2023</td>
-                            <td></td>
-                            <td>Working on XML Sorter.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>10:26 PM Sunday, 19 February 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/Cursed-Text/">Visit</a></td>
-                            <td>Completed Cursed text generator.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>9:14 PM Friday, 17 February 2023</td>
-                            <td></td>
-                            <td>Collect JSON data for random-lyrics-generator</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td> 9:41 PM Wednesday, 15 February 2023 </td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/jwt/">Visit</a></td>
-                            <td>Created new tool JWT Decoder.</td>
-                            <td>2.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>2:03 PM Wednesday, 15 February 2023</td>
-                            <td></td>
-                            <td>Worked on cursed text generator.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>11:13 PM Tuesday, 14 February 2023</td>
-                            <td></td>
-                            <td>Working on cursed text generator.</td>
-                            <td>6 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>10:16 PM Monday, 13 February 2023</td>
-                            <td></td>
-                            <td>Adding Crezy ness to cursed text generator.</td>
-                            <td>4.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>8:23 PM Friday ,10 February 2023</td>
-                            <td></td>
-                            <td>Working on cursed-text generator.</td>
-                            <td>2.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>5:15 PM Thursday ,9 February 2023</td>
-                            <td></td>
-                            <td>Creted new tool random-superhero-generator.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>4:13 PM Monday, 9 January 2023</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/jwt-decode/">Visit</a></td>
-                            <td>Created new tool JWT decode.</td>
-                            <td>5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>2:39 AM Saturday ,7 January 2023</td>
-                            <td></td>
-                            <td>Learning for Censored Image.</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>12:16 AM Friday , 6 January 2023</td>
-                            <td></td>
-                            <td>Working on random-pokemon-team-generator.</td>
-                            <td>1.2 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>12:40 AM Thursday, 5 January 2023</td>
-                            <td></td>
-                            <td>Created new tool random-pokemon-team-generator.</td>
-                            <td>1.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>11:58 PM Tuesday, 3 January 2023</td>
-                            <td></td>
-                            <td>Working on Censored Image.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>11:46 PM Friday, 30 December 2022</td>
-                            <td></td>
-                            <td>Working on Censored Image.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>04:40 PM Wednesday, 29 December 2022</td>
-                            <td></td>
-                            <td>Collection JSON data for Random Canada Address Generator</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>11:34 PM Wednesday, 28 December 2022</td>
-                            <td></td>
-                            <td>Collection JSON data for Random Canada Address Generator</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>9:38 PM Tuesday, 27 December 2022</td>
-                            <td></td>
-                            <td>Created new tool Random Canada Address Generator</td>
-                            <td>1:30 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>3:55 PM Monday, 26 December 2022</td>
-                            <td></td>
-                            <td>Updated random-address-in-california, fixed random-address-generators file downloading
-                                issue, updated random pokemon generator.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>09:37 AM Friday, 23 December 2022</td>
-                            <td></td>
-                            <td>Working on random-pokemon-generator.</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>11:05 PM Thursday, 22 December 2022</td>
-                            <td></td>
-                            <td>Adding dropdown & about in random-pokemon-generator.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>11:54 PM Wednesday, 21 December 2022</td>
-                            <td></td>
-                            <td>Created new tool random-pokemon-generator.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>4:59 PM Tuesday, 20 December 2022</td>
-                            <td></td>
-                            <td>Learning about Censored Image.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>9:36 PM Monday, 19 December 2022</td>
-                            <td></td>
-                            <td>Updated random-movie-generator.</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>8:57 PM Friday, 16 December 2022</td>
-                            <td></td>
-                            <td>Created new tool Random Address in California.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>8:57 PM Wednesday, 14 December 2022</td>
-                            <td></td>
-                            <td>Working on Random Address in California.</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>10:00 PM Tuesday, 13 December 2022</td>
-                            <td></td>
-                            <td>Created new tool Random Movie Generator.</td>
-                            <td>2:10 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>10:41 PM Monday, 12 December 2022</td>
-                            <td></td>
-                            <td>Created new tool Character Trait Generator.</td>
-                            <td>2:40 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>8:36 PM Friday, 9 December 2022</td>
-                            <td></td>
-                            <td>Created new tool random-flower-generator.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>6:39 PM Thursday, 8 December 2022</td>
-                            <td></td>
-                            <td>Updated all Generator Containing Google Links.</td>
-                            <td>2.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>9:43 PM Wednesday, 7 December 2022</td>
-                            <td></td>
-                            <td>Worked on new random-flower-generator.</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>7:30 PM Tuesday, 6 December 2022</td>
-                            <td></td>
-                            <td>Solved error's occuring in generator text file.</td>
-                            <td>30 Minutes</td>
-                        </tr>
-                        <tr>
-                            <td>6:28 PM Monday, 5 December 2022</td>
-                            <td></td>
-                            <td>Created new tool random-quote-generator</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>8:07 AM Sunday, 4 December 2022</td>
-                            <td></td>
-                            <td>Created new tool random-sentence-generator</td>
-                            <td>2:30 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>7:10 PM Friday, 1 December 2022</td>
-                            <td></td>
-                            <td>Created new tool random-element-generator</td>
-                            <td>1:30 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>6:45 PM Wednesday, 30 November 2022</td>
-                            <td></td>
-                            <td>Working on new tool random-element-generator</td>
-                            <td>1:30 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>06:09 PM , 29 Tuesday 2022</td>
-                            <td></td>
-                            <td>Creted new tool cursed-text.</td>
-                            <td>1:40 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>08:22 PM Saturday, 27 November 2022</td>
-                            <td></td>
-                            <td>Working on new tool cursed-text.</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>08:22 PM Saturday, 27 November 2022</td>
-                            <td></td>
-                            <td>Fixed the error's.</td>
-                            <td>1:40 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>10:39 AM Saturday, 26 November 2022</td>
-                            <td></td>
-                            <td>Created new tool random-planet-generator.</td>
-                            <td>1:30 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>09:24 AM Friday, 25 November 2022</td>
-                            <td></td>
-                            <td>Working on new tool random-planet-generator.</td>
-                            <td>1:30 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>10:04 AM Friday, 25 November 2022</td>
-                            <td></td>
-                            <td>Created new tool random-holiday-generator.</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>9:51 PM Thursday, 24 November 2022</td>
-                            <td></td>
-                            <td>Working on new tool random-holiday-generator.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>7:26 PM Wednesday, 23 November 2022</td>
-                            <td></td>
-                            <td>Created new tool random-lastname-generator.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>7:23 PM Tuesday, 22 November 2022</td>
-                            <td></td>
-                            <td>Created new tool random-cat-generator.</td>
-                            <td>2.5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>6:12 PM Monday, 21 November 2022</td>
-                            <td></td>
-                            <td>Created new tool random-college-generator.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>7:48 PM Saturday, 19 November 2022</td>
-                            <td></td>
-                            <td>Research for the Solution.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>6:56 PM Friday, 18 November 2022</td>
-                            <td></td>
-                            <td>Research for the Solution.</td>
-                            <td>4 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>3:23 PM ,Thursday 17 November 2022</td>
-                            <td></td>
-                            <td>Research for the Solution.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>3:22 AM Thursday, 17 November 2022</td>
-                            <td></td>
-                            <td>Created new tool Random Bird Generator.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>10:08 PM Wednesday, 16 November 2022</td>
-                            <td></td>
-                            <td>Created new tool Random Book Generator.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>4:52 PM Tuesday, 15 November 2022</td>
-                            <td></td>
-                            <td>Created new tool Random Job Generator.</td>
-                            <td>3 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>6:28 PM Monday, 14 November 2022</td>
-                            <td></td>
-                            <td>Created new tool Monster Generator.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>5:45 PM Sunday, 13 November 2022</td>
-                            <td></td>
-                            <td>Create JSON data for Monster Generator.</td>
-                            <td>1.5 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>12:57 AM Saturday, 12 November 2022</td>
-                            <td></td>
-                            <td>Research on random Generators.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>8:37 AM Saturday, 12 November 2022</td>
-                            <td></td>
-                            <td>Download and Setup WAMP.</td>
-                            <td>1 Hour</td>
-                        </tr>
-                        <tr>
-                            <td>11:00 AM Friday, 9 November 2022</td>
-                            <td></td>
-                            <td>Research on random Generators.</td>
-                            <td>2 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>9:37 PM Thursday, 10 November 2022</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/Cybertools-Clone/">Visit</a>
-                            </td>
-                            <td>CyberTools Clone using HTML & Bulma CSS.</td>
-                            <td>5 Hours</td>
-                        </tr>
-                        <tr>
-                            <td>9:30 PM Wednesday, 9 November 2022</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/Resume/">Visit</a>
-                            </td>
-                            <td>Resume Using HTML Bulma CSS.</td>
-                            <td>2.5 Hours</td>
-                        </tr>
-
-                        <tr>
-                            <td>11:00 PM Tuesday, 8 November 2022</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/Simple_Login/">Visit</a>
-                            </td>
-                            <td>Simple Login Page.</td>
-                            <td>One hour</td>
-                        </tr>
-                        <tr>
-                            <td>12:30 PM Tuesday, 8 November 2022</td>
-                            <td><a href="https://shubhamsomwanshi11.github.io/CodeBeautify/">Visit</a>
-                            </td>
-                            <td>Daily Report Page.</td>
-                            <td>One hour</td>
-                        </tr>
-                        <tr>
-                            <td>10:00 AM Tuesday, 8 November 2022</td>
-                            <td></td>
-                            <td>Watch Bulma CSS tutorial.</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
+                            <tr>
+                                <td>11:00 PM Tuesday, 8 November 2022</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/Simple_Login/">Visit</a>
+                                </td>
+                                <td>Simple Login Page.</td>
+                                <td>One hour</td>
+                            </tr>
+                            <tr>
+                                <td>12:30 PM Tuesday, 8 November 2022</td>
+                                <td><a href="https://shubhamsomwanshi11.github.io/CodeBeautify/">Visit</a>
+                                </td>
+                                <td>Daily Report Page.</td>
+                                <td>One hour</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 AM Tuesday, 8 November 2022</td>
+                                <td></td>
+                                <td>Watch Bulma CSS tutorial.</td>
+                                <td></td>
+                            </tr>
+                        </tbody> -->
+                </table>
+                </center>
             </div>
         </div>
     </section>
