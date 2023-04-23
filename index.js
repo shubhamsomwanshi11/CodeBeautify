@@ -16,7 +16,7 @@ var work = [
         "date": "Friday, 21 April 2023",
         "Link": "",
         "Description": "Working on Random Generators Website.",
-        "Time": "1",
+        "Time": "1.2",
     },
     {
         "date": "Saturday, 22 April 2023",
