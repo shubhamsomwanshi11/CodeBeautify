@@ -9,24 +9,48 @@ var work = [
     {
         "date": "Thursday, 20 April 2023",
         "Link": "",
-        "Description": "Working on Random Generators Website.",
+        "Description": "Working on Random Formatter Website.",
         "Time": "2",
     },
     {
         "date": "Friday, 21 April 2023",
         "Link": "",
-        "Description": "Working on Random Generators Website.",
+        "Description": "Working on Random Formatter Website.",
         "Time": "1.2",
     },
     {
         "date": "Saturday, 22 April 2023",
         "Link": "",
-        "Description": "Working on Random Generators Website.",
+        "Description": "Working on Random Formatter Website.",
+        "Time": "2"
+    },
+    {
+        "date": "Saturday, 23 April 2023",
+        "Link": "",
+        "Description": "Working on Random Formatter Website.",
         "Time": "2",
+    },
+    {
+        "date": "Sunday, 23 April 2023",
+        "Link": "",
+        "Description": "Working on Random Formatter Website.",
+        "Time": "3",
+    },
+    {
+        "date": "Monday, 24 April 2023",
+        "Link": "",
+        "Description": "Working on Random Formatter Website.",
+        "Time": "2",
+    },
+    {
+        "date": "Tuesday, 25 April 2023",
+        "Link": "",
+        "Description": "Working on Random Formatter Website.",
+        "Time": "4",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
-    for (let i = 0; i < work.length; i++) {
+    for (let i = work.length-1; i >= 0; i--) {
         code += `
                 <tr>
                     <td>${work[i]["date"]}</td>
@@ -34,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td>${work[i]["Description"]}</td>
                     <td>${work[i]["Time"]} Hours</td>
                 </tr>`
+                console.log(i);
     }
     document.getElementById("tbody").innerHTML = code;
 });
