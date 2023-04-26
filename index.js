@@ -28,25 +28,31 @@ var work = [
         "date": "Saturday, 23 April 2023",
         "Link": `<a href="https://shubhamsomwanshi11.github.io/Random-Generator/" target="_blank" and rel="noopener noreferrer">View</a>`,
         "Description": "Working on Random Formatter Website.",
-        "Time": "2",
+        "Time": "2"
     },
     {
         "date": "Sunday, 23 April 2023",
         "Link": `<a href="https://shubhamsomwanshi11.github.io/Random-Generator/" target="_blank" and rel="noopener noreferrer">View</a>`,
         "Description": "Working on Random Formatter Website.",
-        "Time": "3",
+        "Time": "3"
     },
     {
         "date": "Monday, 24 April 2023",
         "Link": `<a href="https://shubhamsomwanshi11.github.io/Random-Generator/" target="_blank" and rel="noopener noreferrer">View</a>`,
         "Description": "Working on Random Formatter Website.",
-        "Time": "2",
+        "Time": "2"
     },
     {
         "date": "Tuesday, 25 April 2023",
         "Link": `<a href="https://shubhamsomwanshi11.github.io/Random-Generator/" target="_blank" and rel="noopener noreferrer">View</a>`,
         "Description": "Working on Random Formatter Website.",
-        "Time": "4",
+        "Time": "4"
+    },
+    {
+        "date": "Wednesday, 26 April 2023",
+        "Link": `<a href="https://shubhamsomwanshi11.github.io/Random-Generator/" target="_blank" and rel="noopener noreferrer">View</a>`,
+        "Description": "Working on Random Formatter Website.",
+        "Time": "4"
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
