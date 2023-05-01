@@ -59,6 +59,12 @@ var work = [
         "Link": ``,
         "Description": "Working on Random Scenario Generator.",
         "Time": "3"
+    },
+    {
+        "date": "Monday, 1 May 2023",
+        "Link": ``,
+        "Description": "Created new tool Random Scenario Generator.",
+        "Time": "2.5"
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
