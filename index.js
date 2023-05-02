@@ -65,10 +65,17 @@ var work = [
         "Link": ``,
         "Description": "Created new tool Random Scenario Generator.",
         "Time": "2.5"
+
+    },
+    {
+        "date": "Tuesday, 2 May 2023",
+        "Link": ``,
+        "Description": "Working on Email Signature Generator.",
+        "Time": "2.5"
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
-    for (let i = work.length-1; i >= 0; i--) {
+    for (let i = work.length - 1; i >= 0; i--) {
         code += `
                 <tr>
                     <td>${work[i]["date"]}</td>
@@ -76,6 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td>${work[i]["Description"]}</td>
                     <td>${work[i]["Time"]} Hours</td>
                 </tr>`
-                  }
+    }
     document.getElementById("tbody").innerHTML = code;
 });
