@@ -71,7 +71,7 @@ var work = [
         "date": "Tuesday, 2 May 2023",
         "Link": ``,
         "Description": "Working on Email Signature Generator.",
-        "Time": "2.5"
+        "Time": "4.5"
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
