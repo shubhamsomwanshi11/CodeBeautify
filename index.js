@@ -72,6 +72,24 @@ var work = [
         "Link": ``,
         "Description": "Working on Email Signature Generator.",
         "Time": "4.5"
+    },
+    {
+        "date": "Tuesday, 3 May 2023",
+        "Link": ``,
+        "Description": "Working on Email Signature Generator.",
+        "Time": "1"
+    },
+    {
+        "date": "Tuesday, 4 May 2023",
+        "Link": ``,
+        "Description": "Working on Email Signature Generator.",
+        "Time": "2"
+    },
+    {
+        "date": "Tuesday, 5 May 2023",
+        "Link": ``,
+        "Description": "Completed Email Signature Generator.",
+        "Time": "2.5"
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
