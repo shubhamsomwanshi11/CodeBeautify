@@ -86,8 +86,8 @@ var work = [
         "Time": "2"
     },
     {
-        "date": "Tuesday, 5 May 2023",
-        "Link": ``,
+        "date": "Friday, 5 May 2023",
+        "Link": `<a href="https://shubhamsomwanshi11.github.io/Email-Signature-Generator/" target="_blank" and rel="noopener noreferrer">View</a>`,
         "Description": "Completed Email Signature Generator.",
         "Time": "2.5"
     }
