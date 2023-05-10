@@ -90,6 +90,24 @@ var work = [
         "Link": `<a href="https://shubhamsomwanshi11.github.io/Email-Signature-Generator/" target="_blank" and rel="noopener noreferrer">View</a>`,
         "Description": "Completed Email Signature Generator.",
         "Time": "2.5"
+    },
+    {
+        "date": "Monday, 8 May 2023",
+        "Link": `<a href="https://shubhamsomwanshi11.github.io/Random-Generator/" target="_blank" and rel="noopener noreferrer">View</a>`,
+        "Description": "Creating UI in Random Formatter.",
+        "Time": "2"
+    },
+    {
+        "date": "Tuesday, 9 May 2023",
+        "Link": `<a href="https://shubhamsomwanshi11.github.io/Random-Generator/" target="_blank" and rel="noopener noreferrer">View</a>`,
+        "Description": "Added Random Superhero Generator in Random Formatter UI.",
+        "Time": "1"
+    },
+    {
+        "date": "Wednesday, 10 May 2023",
+        "Link": "",
+        "Description": "Updated code with PHP to add generators easily.",
+        "Time": "2.5"
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
