@@ -108,6 +108,18 @@ var work = [
         "Link": "",
         "Description": "Updated code with PHP to add generators easily.",
         "Time": "2.5"
+    },
+    {
+        "date": "Thursday, 11 May 2023",
+        "Link": "",
+        "Description": "Woriking on RandomPen's tool.",
+        "Time": "2"
+    },
+    {
+        "date": "Friday, 12 May 2023",
+        "Link": "",
+        "Description": "Collecting data for Random Food Generator.",
+        "Time": "3"
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
