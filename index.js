@@ -5,6 +5,12 @@ var work = [
         "Link": "",
         "Description": "Created new tool random Username Generator.",
         "Time": "6",
+    },
+    {
+        "date": "Monday, 29 May 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Updated Random Username Generator</li><li>Collecting Data for Random School-Name Generator.</li></ol>`,
+        "Time": "2",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
