@@ -11,6 +11,12 @@ var work = [
         "Link": "",
         "Description": `<ol class="has-text-left"><li>Updated Random Username Generator</li><li>Collecting Data for Random School-Name Generator.</li></ol>`,
         "Time": "2",
+    },
+    {
+        "date": "Tuesday, 30 May 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Added copy to clipboard in random username generator.</li><li>Created new tool Random School-Name Generator.</li></ol>`,
+        "Time": "4",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
