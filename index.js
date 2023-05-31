@@ -3,8 +3,7 @@ var work = [
     {
         "date": "Saturday, 27 May 2023",
         "Link": "",
-        "Description": "Created new tool random Username Generator.",
-        "Time": "6",
+        "Description": `<ol class="has-text-left"><li>Created new tool Username Generator</li></ol>`,        "Time": "6",
     },
     {
         "date": "Monday, 29 May 2023",
@@ -17,6 +16,12 @@ var work = [
         "Link": "",
         "Description": `<ol class="has-text-left"><li>Added copy to clipboard in random username generator.</li><li>Created new tool Random School-Name Generator.</li></ol>`,
         "Time": "4",
+    },
+    {
+        "date": "Wednsday, 31 May 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Created new tool Japanese Name Generator</li></ol>`,
+        "Time": "3.5",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
