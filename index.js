@@ -22,6 +22,12 @@ var work = [
         "Link": "",
         "Description": `<ol class="has-text-left"><li>Created new tool Japanese Name Generator</li></ol>`,
         "Time": "3.5",
+    },
+    {
+        "date": "Thursday, 1 June 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Added Sharing in Generator.</li></ol>`,
+        "Time": "4.5",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
