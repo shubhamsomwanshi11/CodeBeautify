@@ -34,6 +34,12 @@ var work = [
         "Link": "",
         "Description": `<ol class="has-text-left"><li>Collecting data for Random Kingdom Generator.</li></ol>`,
         "Time": "2.5",
+    },
+    {
+        "date": "Monday, 3 June 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Collecting data for Random DND  Generator.</li></ol>`,
+        "Time": "2.5",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
