@@ -36,7 +36,7 @@ var work = [
         "Time": "3.2",
     },
     {
-        "date": "Monday, 3 June 2023",
+        "date": "Monday, 5 June 2023",
         "Link": "",
         "Description": `<ol class="has-text-left"><li>Collecting data for Random DND  Generator.</li></ol>`,
         "Time": "3",
