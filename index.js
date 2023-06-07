@@ -40,6 +40,18 @@ var work = [
         "Link": "",
         "Description": `<ol class="has-text-left"><li>Collecting data for Random DND  Generator.</li></ol>`,
         "Time": "3",
+    },
+    {
+        "date": "Tuesday, 6 June 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Created new tool Random DND Name Generator.</li><li>Created new tool Random Kingdom Name Generator.</li></ol>`,
+        "Time": "5",
+    },
+    {
+        "date": "Wednesday, 7 June 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Created new tool Random DND Name Generator.</li><li>Created new tool Random Kingdom Name Generator.</li></ol>`,
+        "Time": "4",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
