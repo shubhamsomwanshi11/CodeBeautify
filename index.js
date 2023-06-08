@@ -50,8 +50,14 @@ var work = [
     {
         "date": "Wednesday, 7 June 2023",
         "Link": "",
-        "Description": `<ol class="has-text-left"><li>Created new tool Random DND Name Generator.</li><li>Created new tool Random Kingdom Name Generator.</li></ol>`,
+        "Description": `<ol class="has-text-left"><li>Created new tool Random Dwarf Name Generator.</li></ol>`,
         "Time": "4",
+    },
+    {
+        "date": "Thursday, 8 June 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Created new tool Vampire Name Generator.</li>`,
+        "Time": "4:30",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
