@@ -1,63 +1,16 @@
 var code = ""
 var work = [
     {
-        "date": "Saturday, 27 May 2023",
+        "date": "Tuesday, 27 June 2023",
         "Link": "",
-        "Description": `<ol class="has-text-left"><li>Created new tool Username Generator</li></ol>`,        "Time": "6",
-    },
-    {
-        "date": "Monday, 29 May 2023",
-        "Link": "",
-        "Description": `<ol class="has-text-left"><li>Updated Random Username Generator</li><li>Collecting Data for Random School-Name Generator.</li></ol>`,
-        "Time": "2",
-    },
-    {
-        "date": "Tuesday, 30 May 2023",
-        "Link": "",
-        "Description": `<ol class="has-text-left"><li>Added copy to clipboard in random username generator.</li><li>Created new tool Random School-Name Generator.</li></ol>`,
-        "Time": "4",
-    },
-    {
-        "date": "Wednsday, 31 May 2023",
-        "Link": "",
-        "Description": `<ol class="has-text-left"><li>Created new tool Japanese Name Generator</li></ol>`,
-        "Time": "3.5",
-    },
-    {
-        "date": "Thursday, 1 June 2023",
-        "Link": "",
-        "Description": `<ol class="has-text-left"><li>Added Sharing in Generator.</li></ol>`,
-        "Time": "4.5",
-    },
-    {
-        "date": "Friday, 2 June 2023",
-        "Link": "",
-        "Description": `<ol class="has-text-left"><li>Collecting data for Random Kingdom Generator.</li></ol>`,
-        "Time": "3.2",
-    },
-    {
-        "date": "Monday, 5 June 2023",
-        "Link": "",
-        "Description": `<ol class="has-text-left"><li>Collecting data for Random DND  Generator.</li></ol>`,
-        "Time": "3",
-    },
-    {
-        "date": "Tuesday, 6 June 2023",
-        "Link": "",
-        "Description": `<ol class="has-text-left"><li>Created new tool Random DND Name Generator.</li><li>Created new tool Random Kingdom Name Generator.</li></ol>`,
+        "Description": `<ol class="has-text-left"><li>Created new tool Memorable Password Generator.</li></ol>`,
         "Time": "5",
     },
     {
-        "date": "Wednesday, 7 June 2023",
+        "date": "Wednesday, 28 June 2023",
         "Link": "",
-        "Description": `<ol class="has-text-left"><li>Created new tool Random Dwarf Name Generator.</li></ol>`,
-        "Time": "4",
-    },
-    {
-        "date": "Thursday, 8 June 2023",
-        "Link": "",
-        "Description": `<ol class="has-text-left"><li>Created new tool Vampire Name Generator.</li>`,
-        "Time": "4:30",
+        "Description": `<ol class="has-text-left"><li>Created new tool Magic School Name Generator.</li>`,
+        "Time": "2:30",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
