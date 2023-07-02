@@ -23,6 +23,12 @@ var work = [
         "Link": "",
         "Description": `<ol class="has-text-left"><li>Created new tool Disney Character Generator.</li></ol>`,
         "Time": "4:20",
+    },
+    {
+        "date": "Sunday, 2 July 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Created new tool God Name Generator.</li></ol>`,
+        "Time": "3:10",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
