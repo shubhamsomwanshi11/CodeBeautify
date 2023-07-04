@@ -29,6 +29,12 @@ var work = [
         "Link": "",
         "Description": `<ol class="has-text-left"><li>Created new tool God Name Generator.</li></ol>`,
         "Time": "3:10",
+    },
+    {
+        "date": "Tuesday, 4 July 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Created new tool Random Setting Generator Generator.</li><li>Created new tool Twitch Name Generator.</li></ol>`,
+        "Time": "4:20",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
