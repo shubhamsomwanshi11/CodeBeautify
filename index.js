@@ -35,6 +35,12 @@ var work = [
         "Link": "",
         "Description": `<ol class="has-text-left"><li>Created new tool Random Setting Generator Generator.</li><li>Created new tool Twitch Name Generator.</li></ol>`,
         "Time": "4:20",
+    },
+    {
+        "date": "Wednesday, 5 July 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Created new tool Villager Name Generator.</li><li>Added Google Search link in : <ul class="px-4"><li>• Book Title Generator</li><li>• God Name Generator</li><li>• Halloween Name Generator</li><li>• Disney Character Generator</li></ul></li></ol>`,
+        "Time": "5:30",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
