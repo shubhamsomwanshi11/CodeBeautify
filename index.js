@@ -59,6 +59,12 @@ var work = [
         "Link": "",
         "Description": `<ol class="has-text-left"><li>Created new tool Random Town Generator</li></ol>`,
         "Time": "2:00",
+    },
+    {
+        "date": "Tuesday, 11 July 2023",
+        "Link": "",
+        "Description": `<ol class="has-text-left"><li>Working on new tool Random Location Generator</li></ol>`,
+        "Time": "3:30",
     }
 ]
 document.addEventListener("DOMContentLoaded", () => {
